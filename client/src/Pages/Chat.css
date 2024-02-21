@@ -1,0 +1,22 @@
+.chat{
+    width: 100vw;
+    height: 100vh;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.chat-container{
+    width: 85vw;
+    height: 90vh;
+    background-color: rgb(43, 213, 213);
+}
+.msg-box{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    /* justify-content: space-between; */
+
+}
