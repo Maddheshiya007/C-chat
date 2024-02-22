@@ -1,0 +1,52 @@
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(47, 47, 62);
+    color: white;
+    height: 700px;
+    padding-top: 50px;
+    overflow: auto;
+
+
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid white;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.contact:hover {
+    background-color: rgb(22, 22, 24);
+}
+
+
+.contact p {
+    font-size: 25px;
+}
+
+.img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.img img {
+    object-fit: cover;
+    height: 60px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}

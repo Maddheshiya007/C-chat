@@ -1,9 +1,27 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import './Contacts.css'
 
-const Contacts = () => {
+const Contacts = ({ contacts, currentChatHandler }) => {
+
+
+
   return (
-    <div>
-      contacts
+    <div className='contacts'>
+      <h2>Contacts</h2>
+      <div>
+        {contacts.map(contact => (
+          <div key={contact._id} className='contact'
+            onClick={() => {
+              currentChatHandler(contact);
+            }}
+          >
+            <div className='img'>
+              <img src={contact.avatar?.secure_url} alt="" />
+            </div>
+            <p>{contact.username}</p>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }

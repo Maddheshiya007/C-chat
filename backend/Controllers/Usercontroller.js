@@ -109,3 +109,17 @@ module.exports.setAvatar = async (req, res) => {
         
     }
 }
+
+module.exports.getAllUsers = async (req, res) => {
+    try {
+        const users = await User.find({ _id: { $ne: req.params._id }}).select([
+            "email",
+            "username",
+            "avatar",
+            "_id"
+        ]);
+        res.status(200).json({ users });
+    } catch (error) {
+        res.status(400).json({ error });
+    }
+}

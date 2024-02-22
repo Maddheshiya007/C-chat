@@ -65,7 +65,7 @@ const Register = () => {
         <div className='register'>
             <form onSubmit={submitHandler} className='form'>
                 <h2>C-Chat</h2>
-                <input type="text" name="username" placeholder="Username" value={data.username} onChange={(e) => {
+                <input type="text" name="username" placeholder="Your Name" value={data.username} onChange={(e) => {
                     changeHandler(e);
                 }} />
                 <input type="email" name="email" placeholder="Email" value={data.email} onChange={(e) => {

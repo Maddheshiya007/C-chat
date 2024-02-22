@@ -51,7 +51,7 @@ const Login = () => {
             if (res.data.status === 200) {
                 localStorage.setItem('user', JSON.stringify(res.data.user));
                 toast.success('Account Logged in successfully');
-                console.log(res.data.user.isAvatarImageSet)
+
                 if (res.data.user.isAvatarImageSet === false) {
                     navigate('/setAvatar');
                 }
