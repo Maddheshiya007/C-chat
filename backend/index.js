@@ -9,21 +9,21 @@ const UserRoutes = require('./Routes/UserRoutes')
 
 // const __dirname = path.resolve();
 
-app.use(express.static(path.join(__dirname, '/client/build')));
+app.use(express.static(path.join(__dirname, '..', '/client/build')));
 
 // Middleware
 app.use(cors());
 app.use(express.json());
 
 app.use('/api/auth', UserRoutes);
-app.get('*', (req,res) => {
-    res.sendFile(path.join(__dirname, '/client/build/index.html'));
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, "..", 'client', 'build', 'index.html'));
 });
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGODB_URL).then(() => {
     console.log('MongoDB connected!');
-}).catch((err) => console.log(err)  );
+}).catch((err) => console.log(err));
 
 
 
