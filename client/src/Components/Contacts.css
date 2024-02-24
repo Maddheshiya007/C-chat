@@ -4,10 +4,20 @@
     justify-content: center;
     background-color: rgb(47, 47, 62);
     color: white;
-    height: 700px;
-    padding-top: 50px;
+    /* height: 600px; */
+    /* padding-top: 50px; */
     overflow: auto;
 
+
+}
+
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    height: 600px;
+    overflow: auto;
 
 }
 

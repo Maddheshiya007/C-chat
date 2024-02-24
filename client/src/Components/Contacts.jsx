@@ -3,12 +3,10 @@ import './Contacts.css'
 
 const Contacts = ({ contacts, currentChatHandler }) => {
 
-
-
   return (
     <div className='contacts'>
       <h2>Contacts</h2>
-      <div>
+      <div className='contact-list'>
         {contacts.map(contact => (
           <div key={contact._id} className='contact'
             onClick={() => {

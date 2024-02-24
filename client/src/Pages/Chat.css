@@ -8,11 +8,9 @@
 
 .chat-container {
     width: 85vw;
-    padding: 20px 0;
-    padding-bottom: 0;
-    display: flex;
-    flex-direction: column;
-
+    /* display: flex;
+    flex-direction: column; */
+    /* gap: 10px; */
     background-color: rgb(43, 213, 213);
 }
 
